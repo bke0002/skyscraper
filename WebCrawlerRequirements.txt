@@ -1,0 +1,30 @@
+Web Crawler for Rheem 
+Basic Requirements
+
+Demo Requirements
+Pull reviews related to Rheem from websites like Home Depot
+Pull reviews by Model Number (needs to be a dynamic list so new models can be added easily)
+Save reviews using forms inside the reliance system
+•	Model Number
+•	Review Date
+•	Rating
+•	Review Text
+•	Way to ID Review from other Reviews for the same product (need to locate and respond to review on the Home Depot Website – not required for working demo really)
+
+Further Project Requirements
+Frequent scheduled web crawls for new reviews
+Search through saved reviews inside Reliance system
+Search by:
+•	Model Numbers
+•	Keywords
+•	Rating
+•	Helpful/not helpful
+•	Whether Rheem has responded or not
+Send alerts for new reviews???
+
+
+
+
+
+
+
