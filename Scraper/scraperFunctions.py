@@ -3,8 +3,11 @@ import urllib
 
 
 # creates complete URL using a baseUrl and a variable number or identifier
-def createURL(modelNumber, baseURL):		
-   return baseURL + modelNumber		
+def createURL(modelNumber, baseURL):    
+   return baseURL + modelNumber   
+
+def getAllModelNumbers(filename):
+  return 0
 
 # returns parseable Html object from Beautiful Soup library
 def getHTML(URL):
@@ -12,7 +15,7 @@ def getHTML(URL):
     # Set up web socket with given url
    request = urllib.urlopen(URL)
 
-	# Create BeautifulSoup object
+  # Create BeautifulSoup object
    soup = BeautifulSoup(request, "html.parser")
    
    return soup 
@@ -33,4 +36,3 @@ def getNumReviews(numReviewsText, htmlTag, tagAttrib, tagName):
 
    numReviewsString = numReviewsText.find(htmlTag, { tagAttrib : tagName }).string
    return int(numReviewsString)
-
