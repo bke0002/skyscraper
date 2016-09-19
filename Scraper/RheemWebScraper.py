@@ -102,7 +102,7 @@ def scraper(modelNum, excelFile):
 	return "Success"
 
 
-scraper("XE9999999", "scraperResult.xls")
+scraper("XE55T12EC45U0", "scraperResult.xls")
 
 #################### UI CALLS #########################################
 # top = Tkinter.Tk()
