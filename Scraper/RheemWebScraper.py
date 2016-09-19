@@ -3,16 +3,16 @@ import urllib
 import xlwt
 import Tkinter
 import math
-import scraperFunctions as x
+import scraperFunctions as scraperFunks
 
 # method scrapes HomeDepot for specific Model Number		
 def scraper(modelNum, excelFile):	
 
    baseURL = "http://m.homedepot.com"
 
-   allHTML = x.getHTML(x.createURL(modelNum, "http://m.homedepot.com/s/"))
+   allHTML = scraperFunks.getHTML(scraperFunks.createURL(modelNum, "http://m.homedepot.com/s/"))
 
-   allReviewsOnPage = x.findAllReviews(allHTML, 'li', 'id', 'reviews')
+   allReviewsOnPage = scraperFunks.findAllReviews(allHTML, 'li', 'id', 'reviews')
 
 	# Check to see if there are no reviews
    for rev in allReviewsOnPage:
@@ -20,16 +20,14 @@ def scraper(modelNum, excelFile):
          print ("No Reviews for Model Number " + modelNum)
          return "No Reviews"
 
-   reviewsPage = x.findNumberOfReviewsText(allReviewsOnPage, 'a', 'class', 'text-secondary flex space-between flex-grow-1') 
+   reviewsPage = scraperFunks.findNumberOfReviewsText(allReviewsOnPage, 'a', 'class', 'text-secondary flex space-between flex-grow-1') 
    
    #Check for only one review
    if (reviewsPage == []):
       print ("Only one review")
       return "Only one review"
 
-   numReviews = x.getNumReviews(reviewsPage, 'span', 'class', 'text-primary')
-
-   
+   numReviews = scraperFunks.getNumReviews(reviewsPage, 'span', 'class', 'text-primary')
 
 	#determine number of pages of reviews with 10 reviews per page
    numPages = math.floor((numReviews / 10))
@@ -37,29 +35,69 @@ def scraper(modelNum, excelFile):
    if mod > 0:
       numPages = numPages + 1
 
-
+   # Start Excel doc.
    workbook = xlwt.Workbook()
    sheet = workbook.add_sheet("Reviews1", cell_overwrite_ok=True)
    sheet.write(0, 0, "Review Date")
    sheet.write(0, 1, "Review Score")
    sheet.write(0, 2, "Review Text")
+   sheet.write(0, 3, "Helpful?")
+   sheet.write(0, 4, "Response?")
+   sheet.write(0, 5, "Response ID")
 
-   #start loop
-   i = 0
-   j = 1
+   
+   i = 0    # Current page
+   j = 1    # Row number in excel sheet
    link = reviewsPage.get('href')
+
    while i < numPages:
       # get page of reviews
-      pageOfReviewsHtml = x.getHTML(x.createURL(link, baseURL))
+      pageOfReviewsHtml = scraperFunks.getHTML(scraperFunks.createURL(link, baseURL))
 
       # find all reviews on current page
-      allReviewsOnPage = x.findAllReviews(pageOfReviewsHtml, 'div', 'class', 'reviews-entry p-top-normal p-bottom-normal sborder border-bottom border-default review static-height')
+      allReviewsOnPage = scraperFunks.findAllReviews(pageOfReviewsHtml, 'div', 'class', 'reviews-entry p-top-normal p-bottom-normal sborder border-bottom border-default review static-height')
 
-      for review in allReviewsOnPage:         
-         sheet.write(j, 1, str((review.find('div', {'class':'stars'})).get('rel')))
-         sheet.write(j, 2, (review.find('p', {'class':'review line-height-more'})).string)
-         sheet.write(j, 0, (review.find('div', {'class':'small text-muted right'})).string)
-         #print ("Review: " + str(j))
+      # Write reviews from page into excel sheet
+      for review in allReviewsOnPage:
+         starRating = str((review.find('div', {'class':'stars'})).get('rel'))
+         sheet.write(j, 1, starRating)
+
+         reviewText = (review.find('p', {'class':'review line-height-more'})).string
+         sheet.write(j, 2, reviewText)
+
+         reviewDate = (review.find('div', {'class':'small text-muted right'})).string
+         sheet.write(j, 0, reviewDate)
+
+         helpful = (review.findAll('span',{'class':'small m-left-small'}))
+         
+         # Helpful can sometimes not exist, check for that.   
+         if helpful is None:
+            j = j + 1
+            continue
+         else:
+
+            # There can be multiple spans with same class. First is something like "Pro" or "DIY" or "Reccommended"
+            # Second is "x in y found this helpful". We want that one.
+            k = 0
+            wasHelpful = False
+            for item in helpful:
+               if "helpful" in item.string:
+                  helpful = item
+                  helpful = helpful.string
+                  wasHelpful = True
+                  
+                  break            
+
+            if wasHelpful:
+               sheet.write(j,3,helpful)
+               print ("Review: " + str(j) + "\nHelpful Msg: " + helpful)
+            else:
+               sheet.write(j,3,"Not Helpful")
+               print ("Review: " + str(j) + " was not helpful.")
+
+         response = ""
+         
+
          j = j + 1
 
       

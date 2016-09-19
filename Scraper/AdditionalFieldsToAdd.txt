@@ -1,0 +1,22 @@
+Model Numbers || Product ID		(~)
+Date of review 				(done!)
+# stars rating 				(done!)
+Review text				(done!)
+Helpful / not helpful			(x)
+Whether response has been made		(x)
+ID per review				(x)
+
+
+For a reviewer to respond to a review:
+	- Needs to find review without response out of x many pages (example, 9001 pages)
+	- We give them a url for the page of reviews (each page has 10 reviews, should be easy to find)
+	
+	PROBLEM:
+	- each new review will push back the reviews to other pages
+	- Example: model number 'xyz' page received 10 new reviews. If we give the reviewer the url to a previous
+	  review, it may be pushed back to the wrong page.
+
+	- Fix:	each time a new review happens on model number 'xyz' page, recalculate where reviews are for that
+	  particular model number.
+		- Example: we have 3000 model numbers, but only 10 have new reviews. Recalculate page numbers of reviews
+		  for only those 10 model numbers.

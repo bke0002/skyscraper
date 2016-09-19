@@ -6,6 +6,27 @@ import urllib
 def createURL(modelNumber, baseURL):		
    return baseURL + modelNumber		
 
+def adjustModelNumbersFile():
+  thisfile = open('productIDList.txt','r+')
+  productIDs = []
+
+  for line in thisfile:
+    productIDs.append(line)
+
+  productIDs = list(set(productIDs))
+
+  writethis = ""
+
+  for item in productIDs:
+    writethis = writethis + item
+
+  thisfile.write(writethis)
+
+  return 0
+
+def getAllModelNumbers(filename):
+  return 0
+
 # returns parseable Html object from Beautiful Soup library
 def getHTML(URL):
 
