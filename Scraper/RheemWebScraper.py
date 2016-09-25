@@ -6,7 +6,7 @@ import math
 import scraperFunctions as scraperFunks
 
 # method scrapes HomeDepot for specific Model Number		
-def scraper(modelNum, excelFile):	
+def scraper(modelNum, sheet, j):	
 
    baseURL = "http://m.homedepot.com"
 
@@ -35,21 +35,10 @@ def scraper(modelNum, excelFile):
    if mod > 0:
       numPages = numPages + 1
 
-   # Start Excel doc.
-   workbook = xlwt.Workbook()
-   sheet = workbook.add_sheet("Reviews1", cell_overwrite_ok=True)
-   sheet.write(0, 0, "Review Date")
-   sheet.write(0, 1, "Review Score")
-   sheet.write(0, 2, "Review Text")
-   sheet.write(0, 3, "Helpful?")
-   sheet.write(0, 4, "Response?")
-   sheet.write(0, 5, "Response ID")
-
    
    i = 0    # Current page
-   j = 1    # Row number in excel sheet
    link = reviewsPage.get('href')
-
+   count = 0
    while i < numPages:
       # get page of reviews
       pageOfReviewsHtml = scraperFunks.getHTML(scraperFunks.createURL(link, baseURL))
@@ -59,14 +48,18 @@ def scraper(modelNum, excelFile):
 
       # Write reviews from page into excel sheet
       for review in allReviewsOnPage:
+         count += 1
+         sheet.write(j, 0, modelNum)
+		 
+		 
          starRating = str((review.find('div', {'class':'stars'})).get('rel'))
-         sheet.write(j, 1, starRating)
+         sheet.write(j, 2, starRating)
 
          reviewText = (review.find('p', {'class':'review line-height-more'})).string
-         sheet.write(j, 2, reviewText)
+         sheet.write(j, 3, reviewText)
 
          reviewDate = (review.find('div', {'class':'small text-muted right'})).string
-         sheet.write(j, 0, reviewDate)
+         sheet.write(j, 1, reviewDate)
 
          helpful = (review.findAll('span',{'class':'small m-left-small'}))
          
@@ -89,11 +82,11 @@ def scraper(modelNum, excelFile):
                   break            
 
             if wasHelpful:
-               sheet.write(j,3,helpful)
-               print ("Review: " + str(j) + "\nHelpful Msg: " + helpful)
+               sheet.write(j,4,helpful)
+               #print ("Review: " + str(j) + "\nHelpful Msg: " + helpful)
             else:
-               sheet.write(j,3,"Not Helpful")
-               print ("Review: " + str(j) + " was not helpful.")
+               sheet.write(j,4,"Not Helpful")
+               #print ("Review: " + str(j) + " was not helpful.")
 
          response = ""
          
@@ -109,51 +102,34 @@ def scraper(modelNum, excelFile):
       i = i + 1
 
 
-   #reviewScores = []
-   #for rating in ratings:
-   #   reviewScores.append()
 
 
    
 
-   #i = 0
-   #for date in dates:
-   #   strungAlongDate = date 			# Haha... date jokes.
-   #   #strungAlongDate = strungAlongDate[15:25]
-
-   #   if date == "":
-   #      strungAlongDate = "Forever Alone. :( "
-
-   #   sheet.write(i + 1, 0, strungAlongDate.string)    
-   #   sheet.write(i + 1, 1, str(reviewScores[i]))
-   #   sheet.write(i + 1, 2, descriptions[i].string)
-
-   #   i += 1
 
    
 
+   print("Number of Reviews " + str(count) + " for productID " + str(modelNum))
 
-   workbook.save(excelFile)
+   return j
 
-   print("Number of Reviews" + str(j))
 
-   return "Success"
+file = open('productIDs.txt')
 
-scraper("XG40S09HE38U0", "scraperResult.xls")
+# Start Excel doc.
+workbook = xlwt.Workbook()
+sheet = workbook.add_sheet("Reviews1", cell_overwrite_ok=True)
+sheet.write(0, 0, "Product ID")
+sheet.write(0, 1, "Review Date")
+sheet.write(0, 2, "Review Score")
+sheet.write(0, 3, "Review Text")
+sheet.write(0, 4, "Helpful?")
+sheet.write(0, 5, "Response?")
+sheet.write(0, 6, "Response ID")
 
-#################### UI CALLS #########################################
-#top = Tkinter.Tk()
-#L1 = Tkinter.Label( top, text="Model Number" )
-#L1.grid(row=1, column=1, columnspan=2, rowspan=1)
-#modelNumberE = Tkinter.Entry(top, bd = 5)
-#modelNumberE.grid(row=1, column=3, columnspan=3, rowspan=1)
+currentLine = 1
 
-#L2 = Tkinter.Label( top, text="Excel Spreadsheet Name")
-#L2.grid(row=2, column=1, columnspan=2, rowspan=1)
-#excelSheet = Tkinter.Entry(top, bd = 5)
-#excelSheet.grid(row=2, column=3, columnspan=3, rowspan=1)
+for line in file:
+	currentLine = scraper(line, sheet, currentLine)
 
-#B = Tkinter.Button(top, text="Submit", command = lambda: scraper(modelNumberE.get(), excelSheet.get()))
-#B.grid(row=3, column=2, columnspan=1, rowspan=1)
-
-#top.mainloop()
+workbook.save("scraperResult.xls")
