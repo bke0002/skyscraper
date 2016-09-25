@@ -4,6 +4,7 @@ import xlwt
 import Tkinter
 import math
 import scraperFunctions as scraperFunks
+from datetime import datetime
 
 # method scrapes HomeDepot for specific Model Number		
 def scraper(modelNum, excelFile):	
@@ -14,7 +15,19 @@ def scraper(modelNum, excelFile):
 
    allReviewsOnPage = scraperFunks.findAllReviews(allHTML, 'li', 'id', 'reviews')
 
+   # get the last date scraper was ran from the text file
+   try:
+      file = open("LastRanDate.txt", "r")
+      stringDate = file.read()
+      lastRanDate = (datetime.strptime(stringDate, "%Y-%m-%d")).date()
+   except IOError:
+      print "No file for date previously run"
+      lastRanDate = -1
+
 	# Check to see if there are no reviews
+   if (len(allReviewsOnPage) == 0):
+      print "Could not find product with model number " + modelNum
+      return
    for rev in allReviewsOnPage:
       if (rev.find(string="No Reviews")):
          print ("No Reviews for Model Number " + modelNum)
@@ -30,7 +43,7 @@ def scraper(modelNum, excelFile):
    numReviews = scraperFunks.getNumReviews(reviewsPage, 'span', 'class', 'text-primary')
 
 	#determine number of pages of reviews with 10 reviews per page
-   numPages = math.floor((numReviews / 10))
+   numPages = int(math.floor((numReviews / 10)))
    mod = (numReviews % 10)
    if mod > 0:
       numPages = numPages + 1
@@ -46,67 +59,145 @@ def scraper(modelNum, excelFile):
    sheet.write(0, 5, "Response ID")
 
    
-   i = 0    # Current page
-   j = 1    # Row number in excel sheet
+
    link = reviewsPage.get('href')
+   link = link.replace("sort=Most-helpful", "sort=Oldest")
 
-   while i < numPages:
-      # get page of reviews
-      pageOfReviewsHtml = scraperFunks.getHTML(scraperFunks.createURL(link, baseURL))
+   if (lastRanDate == -1):
+      i = 0  # Current page
+      j = 1  # Row number in excel sheet
+      while i < numPages:
+         # get page of reviews
+         pageOfReviewsHtml = scraperFunks.getHTML(scraperFunks.createURL(link, baseURL))
 
-      # find all reviews on current page
-      allReviewsOnPage = scraperFunks.findAllReviews(pageOfReviewsHtml, 'div', 'class', 'reviews-entry p-top-normal p-bottom-normal sborder border-bottom border-default review static-height')
+         # find all reviews on current page
+         allReviewsOnPage = scraperFunks.findAllReviews(pageOfReviewsHtml, 'div', 'class', 'reviews-entry p-top-normal p-bottom-normal sborder border-bottom border-default review static-height')
 
-      # Write reviews from page into excel sheet
-      for review in allReviewsOnPage:
-         starRating = str((review.find('div', {'class':'stars'})).get('rel'))
-         sheet.write(j, 1, starRating)
+         # Write reviews from page into excel sheet
+         for review in allReviewsOnPage:
+            starRating = str((review.find('div', {'class':'stars'})).get('rel'))
+            sheet.write(j, 1, starRating)
 
-         reviewText = (review.find('p', {'class':'review line-height-more'})).string
-         sheet.write(j, 2, reviewText)
+            reviewText = (review.find('p', {'class':'review line-height-more'})).string
+            sheet.write(j, 2, reviewText)
 
-         reviewDate = (review.find('div', {'class':'small text-muted right'})).string
-         sheet.write(j, 0, reviewDate)
+            reviewDate = (review.find('div', {'class':'small text-muted right'})).string
+            sheet.write(j, 0, reviewDate)
 
-         helpful = (review.findAll('span',{'class':'small m-left-small'}))
+            helpful = (review.findAll('span',{'class':'small m-left-small'}))
          
-         # Helpful can sometimes not exist, check for that.   
-         if helpful is None:
-            j = j + 1
-            continue
-         else:
-
-            # There can be multiple spans with same class. First is something like "Pro" or "DIY" or "Reccommended"
-            # Second is "x in y found this helpful". We want that one.
-            k = 0
-            wasHelpful = False
-            for item in helpful:
-               if "helpful" in item.string:
-                  helpful = item
-                  helpful = helpful.string
-                  wasHelpful = True
-                  
-                  break            
-
-            if wasHelpful:
-               sheet.write(j,3,helpful)
-               print ("Review: " + str(j) + "\nHelpful Msg: " + helpful)
+            # Helpful can sometimes not exist, check for that.
+            if helpful is None:
+               j = j + 1
+               continue
             else:
-               sheet.write(j,3,"Not Helpful")
-               print ("Review: " + str(j) + " was not helpful.")
 
-         response = ""
+               # There can be multiple spans with same class. First is something like "Pro" or "DIY" or "Reccommended"
+               # Second is "x in y found this helpful". We want that one.
+               k = 0
+               wasHelpful = False
+               for item in helpful:
+                  if "helpful" in item.string:
+                     helpful = item
+                     helpful = helpful.string
+                     wasHelpful = True
+                  
+                     break
+
+               if wasHelpful:
+                  sheet.write(j,3,helpful)
+                  print ("Review: " + str(j) + "\nHelpful Msg: " + helpful)
+               else:
+                  sheet.write(j,3,"Not Helpful")
+                  print ("Review: " + str(j) + " was not helpful.")
+
+            response = ""
          
 
-         j = j + 1
+            j = j + 1
 
       
-      if i != (numPages - 1):
-         paginationSoup = pageOfReviewsHtml.find_all('ul', {'class':'pagination'})
-         allAElements = paginationSoup[0].find_all('a')
-         link = allAElements[len(allAElements) - 1].get('href')
+         if i != (numPages - 1):
+            paginationSoup = pageOfReviewsHtml.find_all('ul', {'class':'pagination'})
+            allAElements = paginationSoup[0].find_all('a')
+            link = allAElements[len(allAElements) - 1].get('href')
 
-      i = i + 1
+         i = i + 1
+   else:
+      i = numPages #last page of reviews
+      j = 1 #line in excel spreadsheet
+
+      while i > 0:
+         # change link to last page of reviews
+         pageString = "/" + str(i) + "?"
+         link = link.replace("/1?", pageString)
+
+         # get page of reviews
+         pageOfReviewsHtml = scraperFunks.getHTML(scraperFunks.createURL(link, baseURL))
+
+         # find all reviews on current page
+         allReviewsOnPage = scraperFunks.findAllReviews(pageOfReviewsHtml, 'div', 'class', 'reviews-entry p-top-normal p-bottom-normal sborder border-bottom border-default review static-height')
+
+         numOfReviews = len(allReviewsOnPage) - 1
+         noMoreNewReviews = False
+         while numOfReviews >= 0:
+            reviewDate = (allReviewsOnPage[numOfReviews].find('div', {'class': 'small text-muted right'})).string
+            reviewDateTime = (datetime.strptime(reviewDate, "%B %d, %Y")).date()
+            # check if it is a new review
+            if reviewDateTime <= lastRanDate:
+               noMoreNewReviews = True
+               break
+
+            starRating = str((allReviewsOnPage[numOfReviews].find('div', {'class': 'stars'})).get('rel'))
+            sheet.write(j, 1, starRating)
+
+            reviewText = (allReviewsOnPage[numOfReviews].find('p', {'class': 'review line-height-more'})).string
+            sheet.write(j, 2, reviewText)
+
+            sheet.write(j, 0, reviewDate)
+
+            helpful = (allReviewsOnPage[numOfReviews].findAll('span', {'class': 'small m-left-small'}))
+
+            # Helpful can sometimes not exist, check for that.
+            if helpful is None:
+               j = j + 1
+               continue
+            else:
+               # There can be multiple spans with same class. First is something like "Pro" or "DIY" or "Reccommended"
+               # Second is "x in y found this helpful". We want that one.
+               k = 0
+               wasHelpful = False
+               for item in helpful:
+                  if "helpful" in item.string:
+                     helpful = item
+                     helpful = helpful.string
+                     wasHelpful = True
+
+                     break
+
+               if wasHelpful:
+                  sheet.write(j, 3, helpful)
+                  print ("Review: " + str(j) + "\nHelpful Msg: " + helpful)
+               else:
+                  sheet.write(j, 3, "Not Helpful")
+                  print ("Review: " + str(j) + " was not helpful.")
+
+            response = ""
+
+            j = j + 1
+            numOfReviews = numOfReviews - 1
+
+         i = i - 1
+
+
+         if noMoreNewReviews:
+            break
+
+         if i > 1:
+            paginationSoup = pageOfReviewsHtml.find_all('ul', {'class': 'pagination'})
+            allAElements = paginationSoup[0].find_all('a')
+            link = allAElements[0].get('href')
+
 
 
    #reviewScores = []
@@ -130,12 +221,16 @@ def scraper(modelNum, excelFile):
 
    #   i += 1
 
-   
+
+   date = (datetime.today()).date()
+   file = open("LastRanDate.txt", "w")
+   file.write(str(date))
+   file.close()
 
 
    workbook.save(excelFile)
 
-   print("Number of Reviews" + str(j))
+   print("Number of Reviews: " + str(j - 1))
 
    return "Success"
 
