@@ -124,12 +124,16 @@ sheet.write(0, 1, "Review Date")
 sheet.write(0, 2, "Review Score")
 sheet.write(0, 3, "Review Text")
 sheet.write(0, 4, "Helpful?")
-sheet.write(0, 5, "Response?")
-sheet.write(0, 6, "Response ID")
 
-currentLine = 1
+sheet.write(1, 0, "Product Identifier for Home Depot's Website")
+sheet.write(1, 1, "Date the Review was made")
+sheet.write(1, 2, "Rating level of the product 1 - 5")
+sheet.write(1, 3, "Comments the user made about the product")
+sheet.write(1, 4, "How many people marked this review as helpful")
+
+currentLine = 2
 
 for line in file:
 	currentLine = scraper(line, sheet, currentLine)
 
-workbook.save("scraperResult.xls")
+workbook.save("scraperResult.txt")
