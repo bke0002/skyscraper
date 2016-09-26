@@ -139,7 +139,7 @@ def scraper(modelNum, sheet, j):
 				if reviewDateTime <= lastRanDate:
 					noMoreNewReviews = True
 					break
-				
+
 				count += 1
 				sheet.write(j, 0, modelNum)
 
