@@ -1,74 +1,125 @@
 import urllib
 import scraperFunctions as scraperFunks
 from bs4 import BeautifulSoup
+import csv
+import math
+import time
+from datetime import datetime
 
-# Make TCP Request
-request = urllib.urlopen("http://homedepot.ugc.bazaarvoice.com/1999aa/205811145/reviews.djs?dir=asc&format=embeddedhtml&page=2&scrollToTop=true&sort=submissionTime")
+ROOTURL1 = "http://homedepot.ugc.bazaarvoice.com/1999aa/"
+ROOTURL2 = "/reviews.djs?&format=embeddedhtml&page="
+ROOTURL3 = "&scrollToTop=true&sort=submissionTime"
+totalPages = 1
 
-# Find where our reviews are located in BazaarVoice JavaScript
-count = 1
-for line in request.readlines():
-	if count == 9: 
-		index = line.index("SourceID")
-		string = line[index + 11:]
-		string = string[:len(string) - 6]
-	count += 1
+def scrapePage(productID, pageNumber, csvFile):
+	# Make TCP Request
+	request = urllib.urlopen(ROOTURL1 + productID + ROOTURL2 + str(pageNumber) + ROOTURL3)
 
-# Remove bad characters
-string = string.replace("<br />", "\n")
-string = string.replace("\\/","/")
-string = string.replace("\\\"","")
-string = string.replace(chr(ord(u'\xbd')),"") # found this odd character "HALFWIDTH HANGUL LETTER PHIEUPH"
-string = string.replace(chr(ord(u'\xc2')),"") # This one looks like a T.
+	string = scraperFunks.prepareHTML(request)
 
-# Make soup with a string that is clean of bad characters
-soup = BeautifulSoup(string, "html.parser")
-prettyHTML = soup.prettify()
+	# Make soup with a string that is clean of bad characters
+	soup = BeautifulSoup(string, "html.parser")
+	prettyHTML = soup.prettify()
 
-# for some reason, missing an apostrophe in the wrong place did some weird things.
-# lets take care of that.
-# [WARNING]: prettyHTML will have extra stuff that isn't in soup.
-prettyHTML = prettyHTML.replace("\'http:=\"\"", "\'http:=\"\"\'")
+	# for some reason, missing an apostrophe in the wrong place did some weird things.
+	# lets take care of that.
+	# [WARNING]: prettyHTML will have extra stuff that isn't in soup.
+	prettyHTML = prettyHTML.replace("\'http:=\"\"", "\'http:=\"\"\'")
 
-# Make BETTER soup with better html formatting
-soup = BeautifulSoup(prettyHTML, "html.parser")
+	# Make BETTER soup with better html formatting
+	soup = BeautifulSoup(prettyHTML, "html.parser")
 
-# Find all the reviews (should be about 30-ish).
-allReviews = scraperFunks.findAllReviews(soup,"div","id","BVSubmissionPopupContainer")
+	#find the total number of reviews
+	if (pageNumber == 1):
+		numReviews = soup.find('div', {'class', 'BVRRHistogramTitle'}).find('span', {'class', 'BVRRNumber'}).string.strip()
+		print ("Total Number of Reviews: " + numReviews)
+		if (numReviews <= 8):
+			pages = 1
+		else:
+			pages = (math.floor((int(numReviews)-8) / 30)) + 2
+			pages = int(pages)
+		global totalPages 
+		totalPages = pages
+	
+	# Find all the reviews (should be about 30-ish).
+	allReviews = scraperFunks.findAllReviews(soup,"div","id","BVSubmissionPopupContainer")
+	if (pageNumber == 1):
+		j = 1
+	else:
+		j = (9 + (30 * (pageNumber - 2)))
+	
+	for review in allReviews:
+		print("Review Number: " + str(j))
+		
+		nicknames = review.find('span',{'itemprop':'author'})
+		print("Username: " + nicknames.string.strip())
+		
+		reviewDate = review.find('meta', {'itemprop':'datePublished'})
+		dateString = reviewDate['content'][:-1]
+		print ("Date: " + dateString)
+		reviewDateObj = datetime.strptime(dateString, "%Y-%m-%d")
+		if (reviewDateObj < dateObj):
+			return False
+		
+		# Find all review information within the review container.
+		reviewContainer = review.findAll('div',{'class':'BVRRReviewDisplayStyle5BodyWrapper'})
 
-count = 1
-for review in allReviews:
+		# Gets review title from reviewContainer
+		reviewTitle = review.find('span',{'itemprop':'name'})
+		print("Review Title: " + reviewTitle.string.strip())
 
-	nicknameContainer = review.findAll('div',{'class':'BVRRUserNicknameContainer'})
+		reviewScore = review.find('span', {'itemprop' : 'ratingValue'})
+		print("Review Score: " + reviewScore.string.strip())
 
-	#try to get the author's name a few <span>'s down.
-	for nicknameContObj in nicknameContainer:
-		nicknames = nicknameContObj.findAll('span',{'itemprop':'author'})
+		reviewText = review.find('div', { 'itemprop' : 'description' }).findAll('span', { 'class' : 'BVRRReviewText' } )
+		
+		#print("Review Test: ")
+		#for paragraph in reviewText:		
+			#print(paragraph.string.strip() + "\n")
+			#print(paragraph.prettify())
 
-		for author in nicknames:
-			username = (author.string).strip()
-			print( str(count) + ": " + username)
+		j = j + 1
+		print("\n")
 
-	# Contains: location, age, & verified purchase
-	contextDataContainer = review.findAll('div',{'class':'BVRRContextDataContainer'}) 
+	return True
+	#print(prettyHTML)
 
-	#Retreive the title of the review
-	titleHolder = review.find('span', {'itemprop':'name'})
-	title = titleHolder.string.strip()
-	print (title)
-			
-	textBodyContainer = review.find('span', {'class', 'BVRRReviewText'})
-	text = textBodyContainer.string.strip()
-	print (text)
-	# Why though?
-	# Find all review information within the review container.
-	reviewContainer = review.findAll('div',{'class':'BVRRReviewDisplayStyle5BodyWrapper'})
+	#output = open("o.txt", "w")
+	#output.write(prettyHTML)
+	
+# Start CSV doc.
+csvFile = open("scraperResults.csv", 'wt')
+csvWriter = csv.writer(csvFile)
 
-	print ("\n")
-	count += 1
+lastDate = open("dateHolder.txt", 'r')
+date = lastDate.readline()
+dateObj = datetime.strptime(date, "%Y-%m-%d")
+
+start = time.time()
+inFile = open("productIDs.txt", 'r')
+for line in inFile:
+	pagenum = 1
+	print ("------------------Reviews for productID: " + line + "----------------------")
+	while (pagenum <= totalPages):
+		if (scrapePage(line, pagenum, csvWriter)):
+			pagenum += 1
+		else:
+			break
+
+end = time.time()
+print("Elapsed time: " + str(end - start))
 
 
-#print(prettyHTML)
 
-output = open("o.txt", "w")
-output.write(prettyHTML)
+
+
+
+
+
+
+
+
+
+
+
+
