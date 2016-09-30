@@ -33,6 +33,24 @@ def findNumberOfReviewsText(allReviewsHtml, htmlTag, tagAttrib, tagName):
 
 
 def getNumReviews(numReviewsText, htmlTag, tagAttrib, tagName):
-
    numReviewsString = numReviewsText.find(htmlTag, { tagAttrib : tagName }).string
    return int(numReviewsString)
+   
+def prepareHTML(request):
+	# Find where our reviews are located in BazaarVoice JavaScript
+	count = 1
+	for line in request.readlines():
+		if count == 9: 
+			index = line.index("SourceID")
+			string = line[index + 11:]
+			string = string[:len(string) - 6]
+		count += 1
+
+	# Remove bad characters
+	string = string.replace("<br />", "\n")
+	string = string.replace("\\/","/")
+	string = string.replace("\\\"","")
+	string = string.replace(chr(ord(u'\xbd')),"") # found this odd character "HALFWIDTH HANGUL LETTER PHIEUPH"
+	string = string.replace(chr(ord(u'\xc2')),"") # This one looks like a T.
+	
+	return string
