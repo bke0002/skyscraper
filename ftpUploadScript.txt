@@ -1,0 +1,3 @@
+open ftps://cdavis:RheemWH!@rheem.etq.com/
+put test.txt /reviewExcel/
+exit
