@@ -29,7 +29,7 @@
           5
          </span>
          \n
-         <meta content="151" itemprop="reviewCount"/>
+         <meta content="154" itemprop="reviewCount"/>
          \n
         </span>
         \n
@@ -38,7 +38,7 @@
           \n
           <img 5="" 5\n="" alt="4.5" of="" out="" src="http://homedepot.ugc.bazaarvoice.com/1999aa/4_5/5/ratingLarge.gif\n" title="4.5"/>
           \n
-          <div class="BVRRRatingsHistogramButtonPopin" id="BVRRRatingsHistogramButtonPopin_i3a6lc2801i7afc6atw016ffu_ID">
+          <div class="BVRRRatingsHistogramButtonPopin" id="BVRRRatingsHistogramButtonPopin_dnorl6jyww17ptupqt8yxdlkb_ID">
            <div class="BVRRHistogram">
             <div class="BVRRBuyAgainContainer">
              <span class="BVRRBuyAgainPercentage">
@@ -52,13 +52,13 @@
              </span>
              <span bvrrbuyagain="" class="BVRRValue">
               <span bvrrbuyagainrecommend="" class="BVRRNumber">
-               138
+               141
               </span>
               <span class="BVRRSeparatorText">
                of
               </span>
               <span bvrrbuyagaintotal="" class="BVRRNumber">
-               145
+               148
               </span>
               <span bvrrbuyagainsuffix="" class="BVRRLabel">
                reviews
@@ -71,7 +71,7 @@
              </span>
              <span bvrrnonzerocount="" class="BVRRCount">
               <span class="BVRRNumber">
-               151
+               154
               </span>
               reviews
              </span>
@@ -100,11 +100,11 @@
                </span>
               </span>
               <div class="BVRRHistogramBar">
-               <div 65%="" class="BVRRHistogramFullBar" style="width:">
+               <div 64%="" class="BVRRHistogramFullBar" style="width:">
                </div>
               </div>
               <span class="BVRRHistAbsLabel">
-               (98)
+               (99)
               </span>
              </div>
              <div bvrrhistogrambarrow4="" class="BVRRHistogramBarRow">
@@ -114,11 +114,11 @@
                </span>
               </span>
               <div class="BVRRHistogramBar">
-               <div 27%="" class="BVRRHistogramFullBar" style="width:">
+               <div 28%="" class="BVRRHistogramFullBar" style="width:">
                </div>
               </div>
               <span class="BVRRHistAbsLabel">
-               (41)
+               (43)
               </span>
              </div>
              <div bvrrhistogrambarrow3="" class="BVRRHistogramBarRow">
@@ -349,18 +349,18 @@
      <span class="BVRRRatingSummaryLinkReadPrefix">
      </span>
      \n
-     <a (bvshowcontent('prr','1999aa','205810505','customer_reviews'))="" data-bvtrack="eventTarget:Review,eName:ReadAll" href="#customer_reviews" name="BV_TrackingTag_Rating_Summary_1_ReadReviews_205810505" onclick="if" title="(151)" {$bv.event(event).preventdefault()};="">
+     <a (bvshowcontent('prr','1999aa','205810505','customer_reviews'))="" data-bvtrack="eventTarget:Review,eName:ReadAll" href="#customer_reviews" name="BV_TrackingTag_Rating_Summary_1_ReadReviews_205810505" onclick="if" title="(154)" {$bv.event(event).preventdefault()};="">
       <span bvrrnonzerocount="" class="BVRRCount">
        <span class="BVRRCustomLinkReadPrefix">
         Read All Reviews
        </span>
        (
        <span class="BVRRNumber">
-        151
+        154
        </span>
        )
       </span>
-      <div class="BVRRRatingsHistogramButtonPopin" id="BVRRRatingsHistogramButtonPopin_trtbnhlhqyx6pakfzjljgkhcv_ID">
+      <div class="BVRRRatingsHistogramButtonPopin" id="BVRRRatingsHistogramButtonPopin_u8yq3hsk066imvcen3d3t0jn6_ID">
        <div class="BVRRHistogram">
         <div class="BVRRBuyAgainContainer">
          <span class="BVRRBuyAgainPercentage">
@@ -374,13 +374,13 @@
          </span>
          <span bvrrbuyagain="" class="BVRRValue">
           <span bvrrbuyagainrecommend="" class="BVRRNumber">
-           138
+           141
           </span>
           <span class="BVRRSeparatorText">
            of
           </span>
           <span bvrrbuyagaintotal="" class="BVRRNumber">
-           145
+           148
           </span>
           <span bvrrbuyagainsuffix="" class="BVRRLabel">
            reviews
@@ -393,7 +393,7 @@
          </span>
          <span bvrrnonzerocount="" class="BVRRCount">
           <span class="BVRRNumber">
-           151
+           154
           </span>
           reviews
          </span>
@@ -422,11 +422,11 @@
            </span>
           </span>
           <div class="BVRRHistogramBar">
-           <div 65%="" class="BVRRHistogramFullBar" style="width:">
+           <div 64%="" class="BVRRHistogramFullBar" style="width:">
            </div>
           </div>
           <span class="BVRRHistAbsLabel">
-           (98)
+           (99)
           </span>
          </div>
          <div bvrrhistogrambarrow4="" class="BVRRHistogramBarRow">
@@ -436,11 +436,11 @@
            </span>
           </span>
           <div class="BVRRHistogramBar">
-           <div 27%="" class="BVRRHistogramFullBar" style="width:">
+           <div 28%="" class="BVRRHistogramFullBar" style="width:">
            </div>
           </div>
           <span class="BVRRHistAbsLabel">
-           (41)
+           (43)
           </span>
          </div>
          <div bvrrhistogrambarrow3="" class="BVRRHistogramBarRow">
@@ -736,18 +736,18 @@
       <span class="BVRRRatingSummaryLinkReadPrefix">
       </span>
       \n
-      <a (bvshowcontent('prr','1999aa','205810505','customer_reviews'))="" data-bvtrack="eventTarget:Review,eName:ReadAll" href="#customer_reviews" name="BV_TrackingTag_Rating_Summary_2_ReadReviews_205810505" onclick="if" title="(151)" {$bv.event(event).preventdefault()};="">
+      <a (bvshowcontent('prr','1999aa','205810505','customer_reviews'))="" data-bvtrack="eventTarget:Review,eName:ReadAll" href="#customer_reviews" name="BV_TrackingTag_Rating_Summary_2_ReadReviews_205810505" onclick="if" title="(154)" {$bv.event(event).preventdefault()};="">
        <span bvrrnonzerocount="" class="BVRRCount">
         <span class="BVRRCustomLinkReadPrefix">
          Read All Reviews
         </span>
         (
         <span class="BVRRNumber">
-         151
+         154
         </span>
         )
        </span>
-       <div class="BVRRRatingsHistogramButtonPopin" id="BVRRRatingsHistogramButtonPopin_6n4ncjbuffk7r05hvt1e32hwq_ID">
+       <div class="BVRRRatingsHistogramButtonPopin" id="BVRRRatingsHistogramButtonPopin_7feq6f2zli8atah3nt3atsmbh_ID">
         <div class="BVRRHistogram">
          <div class="BVRRBuyAgainContainer">
           <span class="BVRRBuyAgainPercentage">
@@ -761,13 +761,13 @@
           </span>
           <span bvrrbuyagain="" class="BVRRValue">
            <span bvrrbuyagainrecommend="" class="BVRRNumber">
-            138
+            141
            </span>
            <span class="BVRRSeparatorText">
             of
            </span>
            <span bvrrbuyagaintotal="" class="BVRRNumber">
-            145
+            148
            </span>
            <span bvrrbuyagainsuffix="" class="BVRRLabel">
             reviews
@@ -780,7 +780,7 @@
           </span>
           <span bvrrnonzerocount="" class="BVRRCount">
            <span class="BVRRNumber">
-            151
+            154
            </span>
            reviews
           </span>
@@ -809,11 +809,11 @@
             </span>
            </span>
            <div class="BVRRHistogramBar">
-            <div 65%="" class="BVRRHistogramFullBar" style="width:">
+            <div 64%="" class="BVRRHistogramFullBar" style="width:">
             </div>
            </div>
            <span class="BVRRHistAbsLabel">
-            (98)
+            (99)
            </span>
           </div>
           <div bvrrhistogrambarrow4="" class="BVRRHistogramBarRow">
@@ -823,11 +823,11 @@
             </span>
            </span>
            <div class="BVRRHistogramBar">
-            <div 27%="" class="BVRRHistogramFullBar" style="width:">
+            <div 28%="" class="BVRRHistogramFullBar" style="width:">
             </div>
            </div>
            <span class="BVRRHistAbsLabel">
-            (41)
+            (43)
            </span>
           </div>
           <div bvrrhistogrambarrow3="" class="BVRRHistogramBarRow">
@@ -1071,7 +1071,7 @@
               <span bvrrnonzerocount="" class="BVRRCount">
                <strong>
                 <span class="BVRRNumber">
-                 151
+                 154
                 </span>
                </strong>
                reviews
@@ -1088,11 +1088,11 @@
                </span>
               </span>
               <div class="BVRRHistogramBar">
-               <div 65%="" class="BVRRHistogramFullBar" style="width:">
+               <div 64%="" class="BVRRHistogramFullBar" style="width:">
                </div>
               </div>
               <span class="BVRRHistAbsLabel">
-               (98)
+               (99)
               </span>
              </div>
              <div bvrrhistogrambarrow4="" class="BVRRHistogramBarRow">
@@ -1102,11 +1102,11 @@
                </span>
               </span>
               <div class="BVRRHistogramBar">
-               <div 27%="" class="BVRRHistogramFullBar" style="width:">
+               <div 28%="" class="BVRRHistogramFullBar" style="width:">
                </div>
               </div>
               <span class="BVRRHistAbsLabel">
-               (41)
+               (43)
               </span>
              </div>
              <div bvrrhistogrambarrow3="" class="BVRRHistogramBarRow">
@@ -1246,13 +1246,13 @@
              </span>
              <span bvrrbuyagain="" class="BVRRValue">
               <span bvrrbuyagainrecommend="" class="BVRRNumber">
-               138
+               141
               </span>
               <span class="BVRRSeparatorText">
                of
               </span>
               <span bvrrbuyagaintotal="" class="BVRRNumber">
-               145
+               148
               </span>
               <span bvrrbuyagainsuffix="" class="BVRRLabel">
                reviews
@@ -1268,18 +1268,18 @@
              <span class="BVRRRatingSummaryLinkReadPrefix">
              </span>
              \n
-             <a (bvshowcontent('prr','1999aa','205810505','customer_reviews'))="" data-bvtrack="eventTarget:Review,eName:ReadAll" href="#customer_reviews" name="BV_TrackingTag_QuickTakeSummary_ReadReviews_205810505" onclick="if" title="(151)" {$bv.event(event).preventdefault()};="">
+             <a (bvshowcontent('prr','1999aa','205810505','customer_reviews'))="" data-bvtrack="eventTarget:Review,eName:ReadAll" href="#customer_reviews" name="BV_TrackingTag_QuickTakeSummary_ReadReviews_205810505" onclick="if" title="(154)" {$bv.event(event).preventdefault()};="">
               <span bvrrnonzerocount="" class="BVRRCount">
                <span class="BVRRCustomLinkReadPrefix">
                 Read All Reviews
                </span>
                (
                <span class="BVRRNumber">
-                151
+                154
                </span>
                )
               </span>
-              <div class="BVRRRatingsHistogramButtonPopin" id="BVRRRatingsHistogramButtonPopin_eegms9jdee0v600ltaql3350w_ID">
+              <div class="BVRRRatingsHistogramButtonPopin" id="BVRRRatingsHistogramButtonPopin_awjp3bhu5pxnp0e2m7ad968l8_ID">
                <div class="BVRRHistogram">
                 <div class="BVRRBuyAgainContainer">
                  <span class="BVRRBuyAgainPercentage">
@@ -1293,13 +1293,13 @@
                  </span>
                  <span bvrrbuyagain="" class="BVRRValue">
                   <span bvrrbuyagainrecommend="" class="BVRRNumber">
-                   138
+                   141
                   </span>
                   <span class="BVRRSeparatorText">
                    of
                   </span>
                   <span bvrrbuyagaintotal="" class="BVRRNumber">
-                   145
+                   148
                   </span>
                   <span bvrrbuyagainsuffix="" class="BVRRLabel">
                    reviews
@@ -1312,7 +1312,7 @@
                  </span>
                  <span bvrrnonzerocount="" class="BVRRCount">
                   <span class="BVRRNumber">
-                   151
+                   154
                   </span>
                   reviews
                  </span>
@@ -1341,11 +1341,11 @@
                    </span>
                   </span>
                   <div class="BVRRHistogramBar">
-                   <div 65%="" class="BVRRHistogramFullBar" style="width:">
+                   <div 64%="" class="BVRRHistogramFullBar" style="width:">
                    </div>
                   </div>
                   <span class="BVRRHistAbsLabel">
-                   (98)
+                   (99)
                   </span>
                  </div>
                  <div bvrrhistogrambarrow4="" class="BVRRHistogramBarRow">
@@ -1355,11 +1355,11 @@
                    </span>
                   </span>
                   <div class="BVRRHistogramBar">
-                   <div 27%="" class="BVRRHistogramFullBar" style="width:">
+                   <div 28%="" class="BVRRHistogramFullBar" style="width:">
                    </div>
                   </div>
                   <span class="BVRRHistAbsLabel">
-                   (41)
+                   (43)
                   </span>
                  </div>
                  <div bvrrhistogrambarrow3="" class="BVRRHistogramBarRow">
@@ -1539,7 +1539,7 @@
          <span bvrrnonzerocount="" class="BVRRCount">
           (
           <span class="BVRRNumber">
-           151
+           154
           </span>
           )
          </span>
@@ -1556,7 +1556,7 @@
          <span bvrrnonzerocount="" class="BVRRCount">
           (
           <span class="BVRRNumber">
-           151
+           154
           </span>
           )
          </span>
@@ -1598,7 +1598,7 @@
                </span>
                \n
                <span class="BVDINumber">
-                (98)
+                (99)
                </span>
               </label>
               <span bvdi_qtsuffixfilter="" class="BVDISuffix">
@@ -1617,7 +1617,7 @@
                </span>
                \n
                <span class="BVDINumber">
-                (41)
+                (43)
                </span>
               </label>
               <span bvdi_qtsuffixfilter="" class="BVDISuffix">
@@ -1996,7 +1996,7 @@
                </span>
                \n
                <span class="BVDINumber">
-                (36)
+                (39)
                </span>
               </label>
               <span bvdi_qtsuffixfilter="" class="BVDISuffix">
@@ -2078,7 +2078,7 @@
                </span>
                \n
                <span class="BVDINumber">
-                (150)
+                (153)
                </span>
               </label>
               <span bvdi_qtsuffixfilter="" class="BVDISuffix">
@@ -2408,7 +2408,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_opjmwupa3nkq79iuf4ezg558p_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_t0l9vlc74yi1dy3dk0y11e8dm_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -2454,7 +2454,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview153904207_pv1xi9xke1riu6w8od7k9muq5_ID">
+            <div class="BVRRReviewText" id="BVRRReview153904207_3cshp2ht5dla2rz4jh3mp9iq4_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                I bought this when my old one started spuing water. Installation was easy and its a handsome heater.
@@ -2609,7 +2609,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_tmqgj5410tmfskitdgcwf5h8r_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_e7tyw2q6vi2pzv0apajdlknyj_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -2655,7 +2655,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview153998614_pc3winh3r33uki5cmcoohibuf_ID">
+            <div class="BVRRReviewText" id="BVRRReview153998614_a1zaaskwpnin6fjdtbvcjdu6t_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Great unit simple install, box looked great
@@ -2812,7 +2812,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_bbc8jbefooloaofvwij4n7ylk_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_a6mj9hu9t79uv703nf7hull44_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -2858,7 +2858,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview154499698_exd37evqb0ev7u95gabeymdxr_ID">
+            <div class="BVRRReviewText" id="BVRRReview154499698_hhx8ov4uekm72y54knvus6b3a_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                I bought this water heater as an auxiliary unit and it looks nice enough. I had to order it
@@ -3015,7 +3015,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_tt5xefh6cc1u4asjt8gsk0byu_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_iaum4ca3tkyn1z9xwm25c37fs_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -3061,7 +3061,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview154506683_ld06do1diraezotdb5l08jcvb_ID">
+            <div class="BVRRReviewText" id="BVRRReview154506683_mh8xj3z1g7ppldlosq4sa3h0t_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Just got it last week so it's hard to tell with a hot water heater. We feel that all heaters should be made to last longer than they do. Our original one lasted 20+ years.
@@ -3216,7 +3216,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_m4m9rnq357d5oufqgnx6wojt2_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_oz33ihk6e939nhd0ql9dtxuii_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -3259,7 +3259,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview154514999_3pzgmhku0luuj0tmdvuq3o6lm_ID">
+            <div class="BVRRReviewText" id="BVRRReview154514999_t8oww3d98i21hzswhhwkf1n3v_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Upon filling the system I found the pressure relief valve to be leaking a considerable amount. Quality control should have found that with a pressure test that obviously is not done. On the good side a replacement relief valve is being sent to me ASAP.
@@ -3445,7 +3445,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_m27p5whg2zsmkorm11ohr2n1m_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_9t1vk8p2r6rt9vyen70rro5n1_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -3491,7 +3491,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview154625633_6w1qm5cdr9125fl194hoptvuw_ID">
+            <div class="BVRRReviewText" id="BVRRReview154625633_5tnyqtuaeks4d32iwv48b0a1y_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Have only had this for a couple of days, but it seems to be perfectly fir for our needs
@@ -3646,7 +3646,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_t16zumgc8e3b1piols3xekgfo_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_eaq6q4bjd2wsazpivi7un9e76_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -3692,7 +3692,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview154640116_h35jvw7odi25vylzrof1le4qo_ID">
+            <div class="BVRRReviewText" id="BVRRReview154640116_p2a4aw0ogoyopo5plcxm5j97n_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Rheem Performance 50 gallon water heater with 6 year warranty: All in all, 4 stars for packaging, ease of installation, and general looks. Asking for a review of the product itself after only 1 full day of use is........well for a water tank........a little soon??
@@ -3847,7 +3847,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_hsl2cp2ijrsmgxomrm31nj3bw_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_lg1al7rt4zb1eacfgpclctcke_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -3893,7 +3893,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview154650573_20bwfqfy3eohyc7fadue43t2b_ID">
+            <div class="BVRRReviewText" id="BVRRReview154650573_b9zed8jkj18lcwi9g2z3ndug8_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                New Rheem installed at my home
@@ -4050,7 +4050,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_ooej9gxlu08ienw6fmb80jocs_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_l8rgl6qohkdac5da15l5779oj_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -4096,7 +4096,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview154667128_ey97p1gv8nijpe13vrs6iq4bw_ID">
+            <div class="BVRRReviewText" id="BVRRReview154667128_3pkebj371vqsgv9wryjynbvxb_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                I purchased water heater last month and am pretty satisfied with it.
@@ -4251,7 +4251,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_5pmnxswrscqrivjj1ard9m3nx_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_azm4yxe5hxkw67530az7elexg_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -4297,7 +4297,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview154897609_axwlz0yjc3f8aj4b5h75y1v68_ID">
+            <div class="BVRRReviewText" id="BVRRReview154897609_7bzz1x3mbqu9iyyp4e7ut1o1i_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Bought this water heater the other night. It is perfect. My son installed it...and it's working fine
@@ -4452,7 +4452,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_md7dcb4iqym8u5qyru6rty4j8_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_ltmhoy37tjrwlbtbp1ktbfjzs_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -4498,7 +4498,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview154919638_tyd5k0ack319h74sq01hleeoy_ID">
+            <div class="BVRRReviewText" id="BVRRReview154919638_ea6r5hv3s9gbivrij366tuwtp_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Just had this installed yesterday and it is great.
@@ -4653,7 +4653,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_thqlf0e2g8czpgvxg43qrzyvg_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_mnesg4s10ooutg2tp8b8m2gp0_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -4696,7 +4696,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview154948230_dak0gx2cuux26wpjme5amqw2f_ID">
+            <div class="BVRRReviewText" id="BVRRReview154948230_730eak95kpy6vjidpdlor5har_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Hasn't worked since I've had it installed. Terrible product would not recommend this to anyone
@@ -4895,7 +4895,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_t42fk0u5rl99kch9dwg41pwxm_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_6as553pkfiojoj3vta2f9kxmp_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -4941,7 +4941,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview154948929_ep8uvr833ypf1ikd9aez9jitf_ID">
+            <div class="BVRRReviewText" id="BVRRReview154948929_a6xdpc0cpwqhf10u0oqucegd9_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                replaces an older Rheem unite that served me well.
@@ -5096,7 +5096,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_9ymw792j60sdntm1bb0py3vnb_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_ihu5oqux42ebe7kh68aaihm0v_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -5142,7 +5142,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview154964111_dxzjzw86n53q27qzci2oitgrw_ID">
+            <div class="BVRRReviewText" id="BVRRReview154964111_u48xnbifrws78c3oro8a8n2cz_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Only had it a couple weeks working fine so far!!!!
@@ -5297,7 +5297,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_l0i3mu441lx9w917b434knj0s_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_psjnd3sq0a6cfjkrrraclewws_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -5343,7 +5343,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155054168_plu8x4bl3xdbk33vhuaoptnfr_ID">
+            <div class="BVRRReviewText" id="BVRRReview155054168_t1g1cb5xw9o67z67cs5abxvz0_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Easy to install, quiet, good instructions, good price
@@ -5498,7 +5498,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_a34dz9zxem869ewkl834bfy1m_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_hsdicfr24eru2b7bjekuqqu40_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -5544,7 +5544,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155059074_dbzaclh6z3kltma5fehzc0af2_ID">
+            <div class="BVRRReviewText" id="BVRRReview155059074_dq6ziidobvm4jv995j8zuv113_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Space is a Big problem and this unit is smaller that the one it replaced. . . big feature. it appears to have a high recovery rate so there appears to be enough hot water even with the reduced size
@@ -5699,7 +5699,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_79vbdeow5yoza9xqlopvdapvh_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_pg2gkrl6blzthtjhb70t4jjld_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -5745,7 +5745,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155065089_p82o7yw6m39pe49up3ix55ylz_ID">
+            <div class="BVRRReviewText" id="BVRRReview155065089_tc0pgagbc95ezx1lyp65hqxht_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                I purchased this standard unit after my Standard brand hot water heater needed replacing after developing a leak in the tank after 23 years. I hope the Rheem will be as well as a unit. My local plumber friend recommended this Rheem to me.
@@ -5900,7 +5900,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_2b6ulsccbvnchzu57di61pda0_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_i3pnbqg9cl0s8unxucx0el2cn_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -5946,7 +5946,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155102938_ua6erc917ifvngvnfcxzzsxoy_ID">
+            <div class="BVRRReviewText" id="BVRRReview155102938_tz127jtdawhypfiu0llw4g8qs_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                I haven't formed an opinon yet...just installed 2 days ago...good so far
@@ -6101,7 +6101,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_376l2pm9cgxl7376tuvgzxxuv_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_sm49p2a20s41jmrbpcfwb6hb2_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -6147,7 +6147,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155158992_he2dc67skhlge8vy3v9rpvrmw_ID">
+            <div class="BVRRReviewText" id="BVRRReview155158992_ii0762pty15rq86a56cixkhbq_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                I bought a week ago Im very satisfied.And I will recomend this product to friends and
@@ -6293,7 +6293,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_dki4i05hvpg17ak1spr5p7q3u_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_5u0pu1cn7sg9tgwa2it8nzveo_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -6339,7 +6339,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155183993_6a3ieu30lgz0opnbh7dmpj2gi_ID">
+            <div class="BVRRReviewText" id="BVRRReview155183993_djgslxvath5gi2yndz6c0gdn4_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                It's a water heater, what can I say. Quite, easy install. Very nice.
@@ -6494,7 +6494,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_hji43vvlcxfm3phlj2gwchsue_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_a77e3cbh63w237pgw4lmtls9n_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -6540,7 +6540,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155199175_apdybgyfyd041buxmahctc623_ID">
+            <div class="BVRRReviewText" id="BVRRReview155199175_tjgaabu9a020s0xjnin3qk7p7_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                I bought this 6 year water heater yesterday and saw that it estimated a $555 annual cost of electricity where my old State water heater estimated $520. I thought the 2015 revisions were supposed to increase insulation, thus operating costs? I paid about $100 more than the State costed me some 7 years ago. I assume doubling the insulation would save 10 to 20% more in operation costs? I also wonder why the average life of a WH is still only 7 years? Rheem should be outdoing all other companies to build a better product for the same cost.
@@ -6751,7 +6751,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_2swien00nl0cez8mko8tle36v_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_i9f5mdlv27sycxqfr386ie2se_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -6797,7 +6797,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155200603_hf6rugei7wdn7iv58x5nfm07q_ID">
+            <div class="BVRRReviewText" id="BVRRReview155200603_ayan5vpoq5so6keqi1minf9jf_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                I was tired of buying and replacing Whirlpool water heaters
@@ -6952,7 +6952,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_pf4bl4nj6r4va98sbggmvz6rn_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_hun80w10y5uozuoz3zhl4s23g_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -6998,7 +6998,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155238774_kv2lykv0e2ymo4nru2r8u0nkq_ID">
+            <div class="BVRRReviewText" id="BVRRReview155238774_6oxfrpecmme77391tckf5alei_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                I have only had it for a few days. I have to adjust the heating because the default settings appear to let out luke warm water, but other than that it is fine.
@@ -7153,7 +7153,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_mofiu5cijcppkkwke03gswiiu_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_ajqo8wkpadeethwi7h9m3jar3_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -7187,7 +7187,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155304258_dy6pvbd3r805bj63fphllui3y_ID">
+            <div class="BVRRReviewText" id="BVRRReview155304258_9ih4r0bhrjldymkesz96ynij8_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Just got it. Figure I should have a little more time before rating it. Seems okay so far.
@@ -7331,7 +7331,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_3gkrgjy9gje9wo4bfg99qpo6j_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_i2901n2080bplkyfnuo8418px_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -7377,7 +7377,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155307027_ll8t3ym32jd6ovw482kcwv6u0_ID">
+            <div class="BVRRReviewText" id="BVRRReview155307027_qio916jngkk9mtf4ejmiebxnh_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Very well insulated, and easy to install. Heats up quickly
@@ -7532,7 +7532,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_ac0tpl7lzman1sm0l4dzrikfa_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_akmx8izpx1c5xqjnt9hafwbmw_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -7578,7 +7578,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155509588_tkfle3kdh8ynb0jr3j0gq9h0m_ID">
+            <div class="BVRRReviewText" id="BVRRReview155509588_ip8y2ienz2mm0vl21ed6b2bcg_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Only have product for a few days. All is good. Very happy with product.
@@ -7733,7 +7733,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_3hhlcm4042xohalxp8l6rxii4_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_iqv44huzvfkqccb08da4wgd1b_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -7779,7 +7779,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155511663_hluv3h953chrnsg1d99z3lz2v_ID">
+            <div class="BVRRReviewText" id="BVRRReview155511663_q74ybh31e5iggk8t8jpz73gij_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                I bought just 1 1/2 weeks ago and really don't have opinion yet...but bought it because of the name....Rheem is a GOOD brand.
@@ -7980,7 +7980,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_m31b6ecrd64r59w8hsa4o6hna_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_kyadojot23cfk4bcoqo9ewav8_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -8026,7 +8026,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155584618_3qnw1qb0y0ix38d2kl56lhnqb_ID">
+            <div class="BVRRReviewText" id="BVRRReview155584618_2mh3ll8psm5dkwzf2d3ykwqe8_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Just purchased the new Rheem 40 gallon HWH. So far so good.
@@ -8181,7 +8181,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_u4lueeiig2240j3kcrghilu91_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_7hdbnnij2ktbubbhugfyju3i2_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -8227,7 +8227,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155685050_l9zn0a10wepdixsm996yie1bl_ID">
+            <div class="BVRRReviewText" id="BVRRReview155685050_5pr9wvja7jy0i1hqcb9gokduy_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Easy installation (by my grandson), amazing amount of hot water. Very satisfied with it's performance.
@@ -8382,7 +8382,7 @@
           \n
           <div bvdi_baitemverifiedpurchaser="" class="BVDI_BAItem">
            \n\n
-           <a class="BVDILink" false;="" id="BVDI_BABadge_mbkvxpvz6kab080lrmm6j8bdr_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
+           <a class="BVDILink" false;="" id="BVDI_BABadge_ewgy23mng3hr4us3c39a4rnnb_ID" onclick="window.open('http://homedepot.ugc.bazaarvoice.com/1999aa/badgedefinition.htm','','left=50,top=50,width=800,height=700,toolbar=0,location=0,resizable=1,scrollbars=1');return" purchaser="" title="Verified">
             <span class="BVDILinkSpan">
              Verified Purchase
             </span>
@@ -8428,7 +8428,7 @@
           <div class="BVRRReviewDisplayStyle5Text">
            <div class="BVRRReviewTextContainer" itemprop="description">
             \n\n\n\n\n\n
-            <div class="BVRRReviewText" id="BVRRReview155693827_dfk9bszlf88wjq0norq6r3x8m_ID">
+            <div class="BVRRReviewText" id="BVRRReview155693827_78eg53potktabzu9boondbux8_ID">
              <div bvrrreviewtextfirstparagraph="" bvrrreviewtextlastparagraph="" class="BVRRReviewTextParagraph">
               <span class="BVRRReviewText">
                Installed it myself. When I primed the tank I noticed a leak down at the drain pipe. The valve was closed it was the pipe itself leaking from in side. After about 3-5 turns with my pipe wrench the problem stopped. I would suggest the drain pipe be tightened appropriately at the manufacturer and test for leaks before distribution.
@@ -8459,7 +8459,7 @@
     <ul id="BVSEO_meta" style="display:none!important">
      \n
      <li data-bvseo="bvDateModified">
-      2016-09-26 T01:24:05.411-05:00
+      2016-09-27 T20:48:35.186-05:00
      </li>
      \n
      <li data-bvseo="ps">
@@ -8471,7 +8471,7 @@
      </li>
      \n
      <li data-bvseo="co">
-      co_hasreviews, tv_151, tr_151
+      co_hasreviews, tv_154, tr_154
      </li>
      \n
      <li data-bvseo="cf">
