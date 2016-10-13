@@ -3,11 +3,15 @@ import urllib
 
 
 # creates complete URL using a baseUrl and a variable number or identifier
-def createURL(modelNumber, baseURL):    
-   return baseURL + modelNumber   
+def createURL(baseURL, productTitle, productID):    
+   newURL = baseURL + "pd/"+ productTitle + "/" + productID + "/reviews"
+   print("URL: " + newURL)
+   return newURL
 
-def getAllModelNumbers(filename):
-  return 0
+def addOffsetToURL(url, offset):
+  url = url + "?offset=" + str(offset)
+  print("NewURL: " + url)
+  return url
 
 # returns parseable Html object from Beautiful Soup library
 def getHTML(URL):
@@ -19,6 +23,10 @@ def getHTML(URL):
    soup = BeautifulSoup(request, "html.parser")
    
    return soup 
+
+def findOneItem(htmlToParse, htmlTag, tagAttrib, tagName):
+  theItem = htmlToParse.find(htmlTag, { tagAttrib : tagName })
+  return theItem
 
 # returns Array of HTML review objects matching the descriptions
 def findAllReviews(htmlToParse, htmlTag, tagAttrib, tagName):
