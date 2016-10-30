@@ -5,6 +5,9 @@ import urllib
 BASELOWESURL = "http://www.lowes.com"
 SEARCHLISTURL = "http://www.lowes.com/search/products?searchTerm=water%20heaters"
 SEARCHOFFSETURL = "&offset="
+PRICEURL1 = "https://lowes.ecorebates.com/api/search/lowes/productRebateDetails.json?jsoncallback=angular.callbacks._0&skus="
+PRICEURL2 = "&uiContext=PDP"
+
 
 # returns a list of lists containing data in the form [productID, productName, productLink, modelNumber, numReviews]
 def getProductInfo():
@@ -28,7 +31,7 @@ def getProductInfo():
 		products = soup.find_all('li', {'class', 'product-wrapper grid-25 tablet-grid-33 v-spacing-large'})
 
 		# appends the productIDs, tile, and link of products with (water heater and (GE or Whirlpool)) in the title to the list
-		for product in products:			
+		for product in products:
 			title = product.get("data-producttitle")
 			if (title.lower().find("water heater") >= 0):
 				if (title.find("GE") >= 0) or (title.find("Whirlpool") >= 0):
@@ -57,6 +60,8 @@ def getModelNumber(items):
 	for item in items:
 		# link to the product page
 		link = item[2]
+		# product id for product
+		productID = item[0]
 
 		# make url request
 		request = urllib.urlopen(link)
@@ -71,13 +76,26 @@ def getModelNumber(items):
 			modelNum = info[index + 2:]
 			item.append(str(modelNum))
 
-		numReviews = soup.find('a', { 'title' : 'View Ratings and Reviews' } ).get_text()
+		# finds the number of Reviews for each product
+		numReviews = soup.find('a', {'title': 'View Ratings and Reviews'}).get_text()
 		numReviews = (numReviews.partition("(")[2]).partition(" ")[0].strip()
 		try:
 			int(numReviews)
 			item.append(numReviews)
 		except ValueError:
 			item.append("0")
-			
+
+		# finds the price for the product
+		url = PRICEURL1 + str(productID) + PRICEURL2
+		request = urllib.urlopen(url)
+		for line in request.readlines():
+			index = line.find("price\":")
+			sub = line[index:]
+			index = sub.find(":")
+			index2 = sub.find(",")
+			price = sub[index + 1:index2]
+			item.append(price)
+
+
 	# returns the list of product info with the modelNumber now appended
 	return items
