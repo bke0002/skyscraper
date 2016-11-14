@@ -79,24 +79,22 @@ def scrapePage(productURL, offset, rootXML, savedDate, productName, modelNumber,
 			reviewDateObj = datetime.strptime(reviewDate, "%m/%d/%Y")			
 			#if the review was outside the date range then every review after is also old 
 			if (reviewDateObj < savedDate):
-				return False
-			else:
-				#review in range, so save date		
-				reviewDict['date'] = reviewDate	
-				#get rest of review data
-				getReviewData(review, reviewDict)
+				return False			
+		
+		#review in range, so save date		
+		reviewDict['date'] = reviewDate	
+		#get rest of review data
+		getReviewData(review, reviewDict)
 
 		#write review to xml file (False is for isHomeDepot indicator)
-		scraperFunks.writeReviewToXML(rootXML, reviewDict, False)				
-		
-		
+		scraperFunks.writeReviewToXML(rootXML, reviewDict, False)					
 		
 		#print for debugging purposes
 		#	print single field
 		#print("Review Title: " + reviewDict['title'])
 		#	print all fields
 		#for key,value in reviewDict.items():
-		#	print(key + ": " + value)
+		#	print(str(key) + ": " + str(value))
 		#print("\n")	
 
 		j = j + 1
